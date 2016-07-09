@@ -138,11 +138,12 @@ ul.menu_first > li {
     width: 14%; /*ширина отдельного тега li (расщитывается 100% / на колличество разделов)*/
     text-align: center;
     padding: 5px 0;
-    
 } 
 a {
     text-decoration: none; /* Отменяем подчеркивание у ссылки */
 }
+
+
 ul.menu_first li a {
     color: #fff;
     position: relative;
