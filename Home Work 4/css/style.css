@@ -1,0 +1,260 @@
+body {
+    background: #0F8AAB;
+    margin: 0 auto; /*наружный отступ*/
+}
+*{
+    margin:0;
+    padding: 0;  /*обнуление полей*/
+}
+
+.conteiner {
+    background: #fff; /*цвет основного контейнера*/
+    height: 875px;     /*высота*/
+    max-width: 1000px;   /*максимальная ширина*/
+    margin: 0 auto;     /*располагаем контент по средине экрана*/
+    position: relative;
+    -webkit-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.75); /*дабавим тень*/
+    -moz-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.75); /*дабавим тень*/
+    box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.75); /*дабавим тень*/
+}
+             /*Header*/
+.logo {
+    font-family: 'Open Sans', sans-serif; /*семейство шрифтов*/
+    font-size: 40px; /*размер*/
+    color: #128AA7;
+    padding: 0px 25px;
+    width: 275px;
+    position: relative;
+    display: block;
+    float: left;
+    top:65px;
+}
+                              /*контактная форма*/
+.contacts{
+    position: relative;
+    float: right; /*выравниваем блок по правому краю*/
+    width: 140px;  /*зададим ширину*/
+    height: 90px; /*зададим высоту*/
+    padding: 12px; /*поля вокруг нашего содержимого*/
+    display: block;
+
+} 
+.contacts h5{
+    color: #128AA7;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 0 9px 0;
+}  
+                                /*номера*/
+.contacts p{
+    color: #4CA6BD;
+    display: block; /*зададим блочность элементу*/
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding: 3px 0;              /*номера*/
+
+
+}                           /*контактная форма*/
+
+                              /*логотип*/
+.logo h6{
+    font-size: 12px;
+    color: #138AA7;
+    text-align: center;
+}                                  /*логотип*/
+
+                               /*перичисление стран*/
+.country{
+    float: right; /*выравниваем по правому краю*/
+    position: relative; /*Положение элемента относительно его исходного места.*/
+    margin: 12px 38px 8px 0;
+    clear: both; /*заприщаем оптекание элимента с обеих сторон*/
+    z-index: 100; /*накладывание элиментов друг на друга (работает в мести с position)*/
+}
+.centr{
+    width: 60px; /*задаем ширину каждого отдельного элемента*/
+    position: relative;
+    display: inline-block;
+}
+.centr p{
+    text-align: center; /*центрирум названия*/
+}
+.country a{
+    color: #4F9DCA; /*цвет ссылок*/
+    font-size: 12px;
+    font-weight: 300; /*толщина шрифта*/
+    position: relative;
+    text-decoration: underline; /*подчеркивание ссылок*/
+}
+                               /*перичисление стран*/
+
+                               /*картинка header*/
+.header-picture{;
+    position: relative;
+    margin: 0 auto;  /*располагаем контент по средине экрана*/
+    display: block;
+    clear: both;
+
+}
+.header-picture img{
+    border-top:1px solid #4F9DCA; /*верхняя граница картинки*/
+    border-bottom:1px solid #4F9DCA; /*нижняя граница картинки*/
+    width: 100%
+}
+                               /*картинка header*/
+
+                               /*меню*/
+nav{
+    background: #323232; /* Old browsers */
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(94,94,94,1); /*свичение элимента*/
+    -moz-box-shadow: 0px 0px 3px 1px rgba(94,94,94,1); /*свичение элимента*/
+    box-shadow: 0px 0px 3px 1px rgba(94,94,94,1); /*свичение элимента */         
+    min-height: 30px; /*минимальная высота*/
+    position: relative;
+    top:-2px; /*смистим к верху*/
+}
+ul {
+    list-style: none; /*убираем точки*/
+    width: 100%; /*задаем ширину понадобится для дальнейшего равномерного разделения разделов*/
+    display: block;
+    vertical-align: middle;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both; /*Отменяет обтекание элемента одновременно с правого и левого края*/
+    float: none; /*Обтекание элемента не задается.*/
+}
+ul.menu_first > li {
+    float: left; /*все теги li обтекаются по левой стороне*/
+    position: relative;
+}
+.razmetka {   
+    outline:0; /*убираем внешнюю границу*/
+    position: relative;
+    width: 14%; /*ширина отдельного тега li (расщитывается 100% / на колличество разделов)*/
+    text-align: center;
+    padding: 5px 0;
+    
+} 
+a {
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+ul.menu_first li a {
+    color: #fff;
+    position: relative;
+    text-align: center; /*центрируем текст ссылки*/
+    letter-spacing: 1px; /*межсимвольный интервал ссылок*/
+    text-shadow: 1px 1px 1px #000; /*добовляем тень к тексту*/
+    font-size: 14px;
+    display: block;
+}
+                                     /*картинка в меню*/
+ul.menu_first li  span{   
+    width: 17px;
+    height: 100%;
+    float: right;
+    background: url(img/str.png) no-repeat center top; /*задаем картинку, положение по горизонтали и вертикали, и заприщаем повторение картинки*/
+    padding: 5px 0px;
+    position: relative;
+    right: 58px; /*перемищение вправо*/
+    top: 3px;
+}                                       /*картинка в меню*/
+
+ul.submenu {                     /*опредиляемся с подменю*/
+    display: none;  /*скрываем подменю*/
+    position: absolute; /*Задаем абсолютное позиционирование ВАЖНО!*/
+    width: 150px; /*ширина подменю*/
+    top: 36px; /*отступ сверху*/
+    left: 0;
+    background: #3B3B3B;
+    border: 1px solid #000;
+    z-index: 100; /*накладывание элиментов друг на друга (работает в мести с position)*/
+    -webkit-box-shadow: -2px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -2px 4px 5px 0px rgba(0,0,0,0.75);
+}
+ul.submenu > li {
+    display: block; /*все теги li блочные*/
+}
+ul.submenu > li > a { /*задаем стили ссылкам*/
+    display: block;
+    padding: 5px 0 3px 12px;
+    color: #fff;
+    background-color: #303030;
+    text-decoration: none;
+    text-align: left; /*все ссылки подменю прижимаются к левому краю*/
+}
+ul.menu_first > li:hover > ul.submenu {  /*при наведении на раздел появляется подменю*/
+    display: block; 
+}
+                                       /*меню*/
+
+
+                           /* основной контент*/
+
+.fon {
+    width: 1000px;
+    overflow: hidden; /* чтобы лишее обрезалось */
+}
+.leftColumn {   /*левая колонка*/
+    width: 210px;
+    float: left;
+    background: #fff;
+    padding-bottom: 20000px; 
+    margin-bottom: -20000px;
+    margin-left: 15px; /*Устанавливаем величину отступа от левоог края*/
+    margin-right: 15px; /*Устанавливаем величину отступа от правого края*/
+
+}
+.leftColumn h5{   /*название левой колонки*/
+    font-size: 20px;
+    font-weight: bold;
+    color: #424C43;
+    text-align: center;
+    padding: 5px 0;
+}
+.centerColumn { /*центральная колонка*/
+    width: 518px;
+    float: left;
+    background: #fff;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+    border-left: 1px solid #C7CACF;
+    border-right: 1px solid #C7CACF;
+    color: #fff;
+}
+
+.rightColumn { /*правая колонка*/
+    width: 210px;
+    float: left;
+    background: #fff;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+    margin-left: 15px; /*Устанавливаем величину отступа от левоог края*/
+    margin-right: 15px; /*Устанавливаем величину отступа от правого края*/
+}
+.rightColumn h5{ /*название правой колонки*/
+    font-size: 20px;
+    font-weight: bold;
+    color: #424C43;
+    text-align: center;
+    padding: 5px 0;
+}
+
+
+                                /* основной контент*/
+div.footer{
+    margin: 10px auto;
+    text-align: center;
+}
+strong {
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 12px;
+    font-weight: normal;
+}
+
