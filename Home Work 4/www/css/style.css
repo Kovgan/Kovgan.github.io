@@ -23,6 +23,7 @@ body {
     color: #128AA7;
     padding: 0px 25px;
     width: 275px;
+    height: 151px;
     position: relative;
     display: block;
     float: left;
@@ -60,7 +61,7 @@ body {
 
                               /*логотип*/
 .logo h6{
-    font-size: 12px;
+    font-size: 22px;
     color: #138AA7;
     text-align: center;
 }                                  /*логотип*/
@@ -213,11 +214,11 @@ ul.menu_first > li:hover > ul.submenu {  /*при наведении на раз
     width: 210px;
     float: left;
     color: #424C43;
-    background: #fff;
+    background: #edeef0;
     padding-bottom: 20000px; 
     margin-bottom: -20000px;
-    margin-left: 15px; /*Устанавливаем величину отступа от левоог края*/
-    margin-right: 15px; /*Устанавливаем величину отступа от правого края*/
+    padding-left: 15px; /*Устанавливаем величину отступа от левоог края*/
+    padding-right: 15px; /*Устанавливаем величину отступа от правого края*/
 
 }
 .leftColumn h5{   /*название левой колонки*/
@@ -242,11 +243,11 @@ ul.menu_first > li:hover > ul.submenu {  /*при наведении на раз
     width: 210px;
     float: left;
      color: #424C43;
-    background: #fff;
+    background: #edeef0;
     padding-bottom: 20000px;
     margin-bottom: -20000px;
-    margin-left: 15px; /*Устанавливаем величину отступа от левоог края*/
-    margin-right: 15px; /*Устанавливаем величину отступа от правого края*/
+    padding-left: 15px; /*Устанавливаем величину отступа от левоог края*/
+    padding-right: 15px; /*Устанавливаем величину отступа от правого края*/
 }
 .rightColumn h5{ /*название правой колонки*/
     font-size: 20px;
