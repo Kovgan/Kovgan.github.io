@@ -100,6 +100,7 @@ body {
 
 }
 .header-picture img{
+    margin-bottom: 13px;
     border-top:1px solid #4F9DCA; /*верхняя граница картинки*/
     border-bottom:1px solid #4F9DCA; /*нижняя граница картинки*/
     width: 100%
@@ -114,7 +115,7 @@ nav{
     box-shadow: 0px 0px 3px 1px rgba(94,94,94,1); /*свичение элимента */         
     height: 30px; /*минимальная высота*/
     position: relative;
-    top:-2px; /*смистим к верху*/
+    top:9px; /*смистим к верху*/
 }
 ul {
     list-style: none; /*убираем точки*/

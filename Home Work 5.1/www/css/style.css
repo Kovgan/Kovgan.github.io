@@ -1,6 +1,7 @@
 body {
     margin:0 auto ; /*наружный отступ*/
     background: url(img/way.jpg) no-repeat;
+    background-size: cover;
     z-index: 1000;
 }
 *{
@@ -79,11 +80,11 @@ ul.menu_first li a.pisd{
     color:#fff;
 }
 ul.menu_first li a.pisd:hover{
-    background-color: #4EABDA;
+    background-color: rgba(0,0,0,0);
     color: #fff;
     padding: 0 12px;
 }
-ul.menu_first li a span:hover{
+ul.menu_first li a span{
     text-decoration: underline;
 }
 ul.menu_first li.bord{
