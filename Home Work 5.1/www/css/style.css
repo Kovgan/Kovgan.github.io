@@ -51,7 +51,7 @@ a {
 ul.menu_first li a {
     color: #5FB9F5;
     position: relative;
-    text-align: center; /*центрируем текст ссылки*/
+    text-align: center; /* центрируем текст ссылки */
     letter-spacing: 1px; /*межсимвольный интервал ссылок*/
     font-size: 14px;
     display: block;
@@ -65,8 +65,8 @@ ul.menu_first li a:hover{
     color: #fff;
     text-shadow:  0 0 1px #fff;
     position: relative;
-    text-align: center; /*центрируем текст ссылки*/
-    letter-spacing: 1px; /*межсимвольный интервал ссылок*/
+    text-align: center; /* центрируем текст ссылки */
+    letter-spacing: 1px; /* межсимвольный интервал ссылок */
     font-size: 14px;
     display: block;
 } 
@@ -90,7 +90,7 @@ ul.menu_first li a span{
 ul.menu_first li.bord{
     border-left: 1px solid #5FB9F5;
 } 
-                                    /* контактная форма с паттерном*/
+                                    /* контактная форма с паттерном  */
 .conteiner_form{
     position: relative;
     width: 560px;
