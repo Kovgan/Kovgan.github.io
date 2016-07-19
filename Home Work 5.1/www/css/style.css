@@ -60,24 +60,27 @@ ul.menu_first li a {
     -webkit-transition: all .25s;
     -o-transition: all .25s;
 } 
-ul.menu_first li a:hover{
+ul.menu_first li a:hover {
     background-color: #4EABDA;
     color: #fff;
-    text-shadow:  0 0 1px #fff;
+    text-shadow: 0 0 1px #fff;
     position: relative;
     text-align: center; /* центрируем текст ссылки */
     letter-spacing: 1px; /* межсимвольный интервал ссылок */
     font-size: 14px;
     display: block;
-} 
- 
+}
 ul.menu_first img{
     position: relative;
     top: 4px; 
     right: 10px;
-} 
+}
 ul.menu_first li a.pisd{
     color:#fff;
+}
+li.pisd1 {
+    color: white;
+    background-color: #4EABDA;
 }
 ul.menu_first li a.pisd:hover{
     background-color: rgba(0,0,0,0);

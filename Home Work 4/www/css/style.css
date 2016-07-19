@@ -1,12 +1,13 @@
 body {
-    background: #0F8AAB;
+    background-image: url(img/14.jpg);
     margin: 0 auto; /*наружный отступ*/
+    background-size: cover;
+    z-index: 1000;
 }
 *{
     margin:0;
     padding: 0;  /*обнуление полей*/
 }
-
 .conteiner {
     background: #fff; /*цвет основного контейнера*/
     max-width: 1000px;   /*максимальная ширина*/
@@ -100,10 +101,10 @@ body {
 
 }
 .header-picture img{
-    margin-bottom: 13px;
+    margin-bottom:-13px;
     border-top:1px solid #4F9DCA; /*верхняя граница картинки*/
     border-bottom:1px solid #4F9DCA; /*нижняя граница картинки*/
-    width: 100%
+    width: 100%;
 }
                                /*картинка header*/
 
