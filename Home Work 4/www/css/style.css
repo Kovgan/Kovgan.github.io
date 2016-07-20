@@ -1,8 +1,11 @@
 body {
-    background-image: url(img/14.jpg);
+    background: linear-gradient(#3fc4d2, #0c739f);
+    background-size: contain;
     margin: 0 auto; /*наружный отступ*/
+}
+header.wrapper{
+    background: linear-gradient(#14cee2, #ffffff);
     background-size: cover;
-    z-index: 1000;
 }
 *{
     margin:0;
