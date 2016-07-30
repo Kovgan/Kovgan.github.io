@@ -1,0 +1,39 @@
+*{
+	margin:0;
+	padding: 0;  /*обнуление полей*/
+}
+header {
+	height:840px; /* Высота блока */
+	width: 100%; /* Ширина блока */
+	background: url("img/background.jpg") no-repeat;
+	background-size: contain;
+}
+.menu_first {
+	margin: 0;
+	padding: 50px;
+	list-style-type: none;
+	width: 1550px;
+	text-align: center;
+}
+.menu_first li {
+	display: inline;
+}
+.logo a{
+	box-shadow: #0F0F0F;
+}
+.logo a:hover{
+	box-shadow: #0F0F0F;
+	text-decoration: none;
+}
+
+.menu_first a {
+	color: #fff;
+	padding: 5px 10px;
+	text-decoration: none;
+	font-weight: bold;
+	display: inline-block;
+	width: 100px;
+}
+.menu_first a:hover {
+	border-bottom: 2px solid #edbfff;
+}

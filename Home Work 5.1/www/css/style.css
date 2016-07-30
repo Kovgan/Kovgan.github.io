@@ -37,7 +37,7 @@ ul {
     margin-right: 20px;
 
 }
-ul.menu_first > li {
+ul.menu_first li {
     float: right; /*все теги li обтекаются по левой стороне*/
     position: relative;
     display: inline-block;
