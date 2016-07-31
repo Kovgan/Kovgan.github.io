@@ -2,38 +2,102 @@
 	margin:0;
 	padding: 0;  /*обнуление полей*/
 }
-header {
+body {
 	height:840px; /* Высота блока */
 	width: 100%; /* Ширина блока */
-	background: url("img/background.jpg") no-repeat;
-	background-size: contain;
+	background: url("img/background.jpg") no-repeat;/*картинка без повторений*/
+	background-size: contain;/*изображение с сохранением пропорций таким образом, чтобы картинка целиком поместилась внутрь блока*/
 }
-.menu_first {
+.content{
+	border: 4px double black;/*рамка вокруг контейнера*/
+	width: 40%; /*ширина блока*/
+	height: 840px;/*высота блока*/
+	margin:0 auto;/*позиционируем блок по центру diva*/
+	padding: 50px 0 0 0;
+}
+.menu_first  {
 	margin: 0;
-	padding: 50px;
+	padding: 0;
 	list-style-type: none;
-	width: 1550px;
-	text-align: center;
 }
-.menu_first li {
+.menu_first li{
 	display: inline;
 }
-.logo a{
-	box-shadow: #0F0F0F;
-}
-.logo a:hover{
-	box-shadow: #0F0F0F;
+div .logo li a {
+	float: left;
+	list-style-type: none;
+    font-family: "league gothic";
+    font-size: 36px;
+	color: white;
 	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+div .menu li a {
+    float: right;
+    font-family: "league gothic";
+    font-size: 18px;
+	color: white;
+	text-decoration: none;
+	margin-left: 34px;
 }
 
-.menu_first a {
-	color: #fff;
-	padding: 5px 10px;
-	text-decoration: none;
-	font-weight: bold;
-	display: inline-block;
-	width: 100px;
-}
-.menu_first a:hover {
-	border-bottom: 2px solid #edbfff;
-}
+/*ul {*/
+	/*list-style: none; !*убираем точки*!*/
+	/*display: block;!*Элемент показывается как блочный.*!*/
+	/*vertical-align: middle;*/
+	/*margin-right: 20px;*/
+/*}*/
+/*ul.menu_first {*/
+	/*position: relative;!*Положение элемента устанавливается относительно его исходного места.*!*/
+	/*display: inline-block;!*блочный элемент, который обтекается другими элементами веб-страницы подобно встроенному элементу.*!*/
+	/*vertical-align: middle;*/
+	/*margin-right: 20px;*/
+/*}*/
+	/*max-width: 960px;   !*максимальная ширина*!*/
+	/*margin: 0 auto;     !*располагаем контент по средине экрана*!*/
+
+/*header {*/
+	/*height: 840px; !* Высота блока *!*/
+	/*width: 100%; !* Ширина блока *!*/
+	/*background: url("img/background.jpg") no-repeat; !*картинка без повторений*!*/
+	/*background-size: contain; !*изображение с сохранением пропорций таким образом, чтобы картинка целиком поместилась внутрь блока*!*/
+/*}*/
+/*div .logo a {*/
+	/*float: left;!*Прижимаем к левому краю*!*/
+	/*position: relative;!*Положение элемента устанавливается относительно его исходного места.*!*/
+	/*font-family: "league gothic";*/
+	/*font-size: 48px;*/
+/*}*/
+/*li {*/
+	/*position: relative;*/
+	/*left: 25px;*/
+/*}*/
+
+/*.menu_first {*/
+	/*float: right;*/
+	/*margin: 0;*/
+	/*padding: 75px 0;*/
+	/*list-style-type: none;*/
+	/*width: 1550px;*/
+	/*text-align: center;*/
+/*}*/
+/*.menu_first li {*/
+	/*display: inline;*/
+	/*padding: 0 20px;*/
+/*}*/
+/*a {*/
+	/*font-family: "league gothic";*/
+/*}*/
+/*.menu_first a {*/
+	/*color: #fff;*/
+	/*font-size: 24px;*/
+	/*padding: 0px 0px;*/
+	/*text-decoration: none;!*Подчёркивание у ссылок*!*/
+	/*font-weight: bold; !*Жирный шрифт*!*/
+	/*display: inline-block;!*в линию ссылки*!*/
+	/*width: 100px;*/
+/*}*/
+/*.menu_first a:hover {*/
+	/*border-bottom: 2px solid #edbfff;*/
+/*}*/

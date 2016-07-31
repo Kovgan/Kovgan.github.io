@@ -1,10 +1,10 @@
-/* font-family: "HelveticaNeueCyr-Light"; */
+/* font-family: "league gothic"; */
 @font-face {
-	font-family: "HelveticaNeueCyr-Light";
+	font-family: 'League Gothic', arial;";
 	src: url("../fonts/HelveticaNeueCyr-Light.eot");
 	src: url("../fonts/HelveticaNeueCyr-Light.eot?#iefix")format("embedded-opentype"),
 	url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"),
-	url("../fonts/HelveticaNeueCyr-Light.ttf") format("truetype");
+	url("../fonts/league-gothic-italic_[allfont.ru].ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
