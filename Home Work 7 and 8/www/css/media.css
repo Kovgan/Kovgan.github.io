@@ -1,0 +1,84 @@
+/*==========  Desktop First Method  ==========*/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 960px) {
+
+	.sell_right .button {
+		margin: 15px auto;
+		float: none;
+		max-width: 250px;
+	}
+	.sell_descr {
+		text-align: center;
+	}
+
+	.maian_mnu ul {
+		background-color: #3797bf;
+		display: none;
+		position: absolute;
+		width: 100%;
+	}
+	.maian_mnu ul li {
+		display: block;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	.conteiner{
+	margin: 75px auto 0;     /*располагаем контент по средине экрана*/
+    position: relative;
+    display: block;
+    width: 670px;
+    float: none;
+    height: 1000px;
+    background-color: rgba(0,0,0,0);
+}
+	.header__menu {
+    position: relative;
+    display: block;
+    top: 0px;
+    float: none;
+    margin-top: 35px;
+	}
+	.left{
+		padding-left: 0px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.toplinks {
+		display: inline-block !important;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 960px) {
+	
+}

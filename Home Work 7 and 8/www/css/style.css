@@ -1,103 +1,119 @@
-*{
-	margin:0;
-	padding: 0;  /*обнуление полей*/
-}
 body {
-	height:840px; /* Высота блока */
-	width: 100%; /* Ширина блока */
-	background: url("img/background.jpg") no-repeat;/*картинка без повторений*/
-	background-size: contain;/*изображение с сохранением пропорций таким образом, чтобы картинка целиком поместилась внутрь блока*/
+    margin: 0 auto; /*наружный отступ*/
+    background-color: #000;
+    font-family: sans-serif;
+    color: #fff;
+    background-image: url(img/bg.png);
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
-.content{
-	border: 4px double black;/*рамка вокруг контейнера*/
-	width: 40%; /*ширина блока*/
-	height: 840px;/*высота блока*/
-	margin:0 auto;/*позиционируем блок по центру diva*/
-	padding: 50px 0 0 0;
+*{
+    margin:0;
+    padding: 0;  /*обнуление полей*/
 }
-.menu_first  {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
+
+.conteiner {
+    margin: 75px auto 0; 
+    display: block;    /*располагаем контент по средине экрана*/
+    position: relative;
+    max-width: 960px;
+    height: 1000px;
+    background-color: rgba(0,0,0,0);
 }
-.menu_first li{
-	display: inline;
+                               /*Header*/
+.logo{
+    position: relative;
+    display: block;
 }
-div .logo li a {
-	float: left;
-	list-style-type: none;
-    font-family: "league gothic";
-    font-size: 36px;
-	color: white;
-	text-decoration: none;
-	margin: 0;
-	padding: 0;
+h4.logo__name{
+    font-family: "leaguegothic-regular-webfont";
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 3px rgb(25,23,24);
 }
-div .menu li a {
+.logo__name_er{
+    color:#714E80;
+    text-shadow:none;
+    top: 1px;
+    position: relative;
+}
+.header__menu{
+    position: relative;
+    display: block;
     float: right;
-    font-family: "league gothic";
-    font-size: 18px;
-	color: white;
-	text-decoration: none;
-	margin-left: 34px;
+    top: -50px;
 }
+.header__menu__ul{
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 100%
+}
+.header__menu__li{
+    position: relative;
+    display: inline-block;
+    float: left;
+    line-height: 40px;
+    padding: 0 25px;
+    
 
-/*ul {*/
-	/*list-style: none; !*убираем точки*!*/
-	/*display: block;!*Элемент показывается как блочный.*!*/
-	/*vertical-align: middle;*/
-	/*margin-right: 20px;*/
-/*}*/
-/*ul.menu_first {*/
-	/*position: relative;!*Положение элемента устанавливается относительно его исходного места.*!*/
-	/*display: inline-block;!*блочный элемент, который обтекается другими элементами веб-страницы подобно встроенному элементу.*!*/
-	/*vertical-align: middle;*/
-	/*margin-right: 20px;*/
-/*}*/
-	/*max-width: 960px;   !*максимальная ширина*!*/
-	/*margin: 0 auto;     !*располагаем контент по средине экрана*!*/
+} 
+.header__menu__li_padding{
+    padding-right: 0px;
+    padding-left: 25px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    line-height: 40px;
+    
 
-/*header {*/
-	/*height: 840px; !* Высота блока *!*/
-	/*width: 100%; !* Ширина блока *!*/
-	/*background: url("img/background.jpg") no-repeat; !*картинка без повторений*!*/
-	/*background-size: contain; !*изображение с сохранением пропорций таким образом, чтобы картинка целиком поместилась внутрь блока*!*/
-/*}*/
-/*div .logo a {*/
-	/*float: left;!*Прижимаем к левому краю*!*/
-	/*position: relative;!*Положение элемента устанавливается относительно его исходного места.*!*/
-	/*font-family: "league gothic";*/
-	/*font-size: 48px;*/
-/*}*/
-/*li {*/
-	/*position: relative;*/
-	/*left: 25px;*/
-/*}*/
+}
+.header__menu__a{
+    font-family: "leaguegothic-regular-webfont";
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 0px 1px 3px rgb(25,23,24);
+    position: relative;
+    display: block;
+    color: #fff;
+}
+                            /*дикорирование ссылки при наведении*/
+.header__menu__a::after{
+   display: block;
+   position: absolute;
+   content: "";
+   height: 2px;
+   width: 0;
+   background-color: #EDBFFF;
+   transition: width .5s ease-in-out;
+   left: 50%;
+   bottom: 0;
+}
+.header__menu__a::before{
+   display: block;
+   position: absolute;
+   content: "";
+   height: 2px;
+   width: 0;
+   background-color: #EDBFFF;
+   transition: width .5s ease-in-out, left .5s ease-in-out;
+   left: 50%;
+   bottom: 0;
+}
+.header__menu__a:hover::before{
+   width: 50%;
+   left: 0;
+}
+.header__menu__a:hover::after{
+   width: 50%;
+}
+.header__menu__a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}                                        /*дикорирование ссылки при наведении*/                      
 
-/*.menu_first {*/
-	/*float: right;*/
-	/*margin: 0;*/
-	/*padding: 75px 0;*/
-	/*list-style-type: none;*/
-	/*width: 1550px;*/
-	/*text-align: center;*/
-/*}*/
-/*.menu_first li {*/
-	/*display: inline;*/
-	/*padding: 0 20px;*/
-/*}*/
-/*a {*/
-	/*font-family: "league gothic";*/
-/*}*/
-/*.menu_first a {*/
-	/*color: #fff;*/
-	/*font-size: 24px;*/
-	/*padding: 0px 0px;*/
-	/*text-decoration: none;!*Подчёркивание у ссылок*!*/
-	/*font-weight: bold; !*Жирный шрифт*!*/
-	/*display: inline-block;!*в линию ссылки*!*/
-	/*width: 100px;*/
-/*}*/
-/*.menu_first a:hover {*/
-	/*border-bottom: 2px solid #edbfff;*/
-/*}*/
+                                 /*Header*/
