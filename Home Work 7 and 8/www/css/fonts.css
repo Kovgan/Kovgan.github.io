@@ -1,10 +1,10 @@
 /* font-family: "HelveticaNeueCyr-Light"; */
 @font-face {
-	font-family: "HelveticaNeueCyr-Light";
-	src: url("../fonts/HelveticaNeueCyr-Light.eot");
-	src: url("../fonts/HelveticaNeueCyr-Light.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"),
-	url("../fonts/HelveticaNeueCyr-Light.ttf") format("truetype");
+	font-family: "opensans-light-webfont";
+	src: url("../fonts/opensans-light-webfont.eot");
+	src: url("../fonts/opensans-light-webfont.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/opensans-light-webfont.woff") format("woff"),
+	url("../fonts/opensans-light-webfont.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
