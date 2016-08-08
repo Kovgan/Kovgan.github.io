@@ -82,6 +82,7 @@ h4.logo__name{
     position: relative;
     display: block;
     color: #fff;
+    outline: none;
 }
                             /*дикорирование ссылки при наведении*/
 .menu__a::after{
@@ -122,14 +123,13 @@ h4.logo__name{
     display: block;
     clear: both;
     margin: 170px auto 0;
-}
-.slider__img{
-    width: 100%;
+     width: 100%;
     height: 400px;
     background: url(img/pattern.png) repeat;
+
 }
 .slider__position{
-    width: 960px;
+    width: 960px !important;
     position: relative;
     display: block;
     margin: 0 auto;
@@ -168,6 +168,10 @@ p.slider__item{
     display: block;
     clear: left;
 }
+p.slider__item_768{
+    position: relative;
+    display: none;
+}
 .conteinerimg{
     position: relative;
     display: inline-block;
@@ -177,15 +181,22 @@ p.slider__item{
 .conteinerimg__iphone4bake{
     position: absolute;
     display: block;
-    left: -75px;
+    left: -70px;
     top: 75px;
+    background:url(img/iphone4bake.png) no-repeat;
+    width: 123px;
+    height: 236px;
+	z-index:1;
+	
 }
 .conteinerimg__ipone4{
     z-index: 100;
     position: relative;
-    /*transform: scale(1, -1);*/
+    background:url(img/ipone4.png) no-repeat;
+    width: 200px;
+    height: 374px;
 }
-.play{
+.conteinerimg_play{
     position: absolute;
     display: block;
     top: 160px;

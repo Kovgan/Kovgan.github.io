@@ -18,23 +18,26 @@ body {
 .form_header{
     position: relative;
     display: block;
-    padding: 15px 45px 7px;  
+    padding: 18px 36px 4px 45px;  
 }
 .form_header img, .phone, .form_header form, .navigation_icon {
     display: inline-block;
     position: relative;
 }
 .form_header img{
-    top:8px;
+    top: 8px;
+    left: 4px;
+    position: relative;
 }
 .phone{
-    margin-right: 15px;
+    padding: 5px 11px 0 7px;
+    position: relative;
 }
 .phone h4{
-    font-family: sans-serif;
-    font-size: 17px;
+    font-family: "Lucida Sans Unicode";
+    font-size: 16px;
     color: #656869;
-    letter-spacing: 1px;
+    font-weight: 100;
 }
 .block_img{
     position: relative;
@@ -43,8 +46,8 @@ body {
     clear: both;
 }
 form.login{
-    min-width: 500px;
-    height: 28px;
+    min-width: 495px;
+    height: 31px;
     position: relative;
     border:0px solid rgba(0,0,0,0);
     border-radius: 4px;
@@ -66,23 +69,29 @@ input.logpass{
     position: relative;
     height: 17px;
     width: 113px;
-    margin: 6px 4px 6px 0px;
+   }
+input.logpass {
+    display: inline-block;
+    position: relative;
+    height: 18px;
+    width: 113px;
+    padding: 0px 2px 0px 1px;
     border:0px solid rgba(0,0,0,0);
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
     -o-border-radius: 2px;
     -ms-border-radius: 2px;
+    margin-bottom: 2px;
 }
 .toplincs {
     vertical-align: middle;
     display: inline-block;
 }
 .toplincs a{
-    font-size: 11px;
+    font-size: 10px;
     color: #fff;
     line-height: 28px;
-    letter-spacing: 1px;
 }
 .border{
     color: #fff;
@@ -91,11 +100,11 @@ input.logpass{
     display: inline-block;
     position: relative;
     vertical-align:middle;
-    padding: 0 4px 0 15px;
+    padding: 0px 0px 6px 23px;
     line-height: 28px;
 }
 .parol a{
-    font-size: 11px;
+    font-size: 10px;
     color: #c9c9c9;
     letter-spacing: 1px;
     border-bottom: 1px solid #c9c9c9;
@@ -145,23 +154,24 @@ ul.menu_first{
 ul.menu_first > li {
     position: relative;
     display: inline-block;
-    line-height: 34px;
+    line-height: 36px;
 }
  
 a {
     text-decoration: none; /* Отменяем подчеркивание у ссылки */
-    font-family: "HelveticaNeueCyr-Light";
+    font-family: "Lucida Sans Unicode";
 }
 ul.menu_first li a {
     color: #c9c9c9;
     position: relative;
     text-align: center; /*центрируем текст ссылки*/
-    font-size: 19px;
+    font-size: 14px;
     display: block;
-    padding: 0 12px;
+    padding: 0px 13px;
     transition: all .25s;
     -webkit-transition: all .25s;
     -o-transition: all .25s;
+    text-transform: uppercase;
 } 
 ul.menu_first li a:hover{
     background: rgb(32,101,131);
@@ -177,7 +187,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#206583', end
 	border-radius:20px;
 }
 #cart{
-	padding-left:50px;
+	padding-left:45px;
 } 
 #cart, #cart  h6{
 	display:inline-block;
@@ -195,11 +205,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#206583', end
 	line-height: 34px;
 	color:#81898C;
 	font-weight:100;
-    letter-spacing: 1px;	
+    letter-spacing: 1px;
+    padding-left: 3px;	
 }
 #cart  h6 span{
-    font-family: sans-serif;
+    font-family: "Lucida Sans Unicode";
 	color:#146194;
+    font-weight: bold;
 } 
 .summa{
 	padding-left: 10px;
@@ -372,10 +384,10 @@ input.checkbox{
 aside.left_bar{
     position: relative;
     float: left;
-    width: 180px;
+    width: 184px;
     height: 500px;
 }
-.denomination{
+.denomination_right{
     border: 1px solid #949FA4;
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -385,7 +397,20 @@ aside.left_bar{
     -webkit-box-shadow: 1px 2px 4px 0px rgba(128,128,128,1);
     -moz-box-shadow: 1px 2px 4px 0px rgba(128,128,128,1);
     box-shadow: 1px 2px 4px 0px rgba(128,128,128,1);
-    margin-bottom: 15px;
+    margin-bottom: 16px;
+}
+.denomination_left{
+    border: 1px solid #949FA4;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-box-shadow: 1px 2px 4px 0px rgba(128,128,128,1);
+    -moz-box-shadow: 1px 2px 4px 0px rgba(128,128,128,1);
+    box-shadow: 1px 2px 4px 0px rgba(128,128,128,1);
+    margin-bottom: 13px;
+    margin-top: 5px;
 }
 .denomination_class_right{
     position: relative;
@@ -403,22 +428,22 @@ aside.left_bar{
     position: relative;
     display:block;
     float: left;
-    margin: 0px 4px;
+    margin: 1px 4px 0px 3px;
 }
 .denomination_class_right h4{
-    font-family: sans-serif;
-    font-size: 13px;
-    padding: 5px 0;
+    font-family: "Lucida Sans Unicode";
+    font-size: 14px;
     color: #124165;
     text-transform:uppercase;
     font-weight: 300;
+    line-height: 26px;
 }
-.denomination img{
+.denomination_right img{
     position: relative;
     display:block;
     float: left;
     background-color: #114165;
-    margin: 2px 4px;
+    margin: 3px 3px 0px 3px;
     padding: 3px;
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -426,17 +451,39 @@ aside.left_bar{
     border: 0px solid rgba(0,0,0,0);
 
 }
-.denomination h4{
-    font-family: sans-serif;
-    font-size: 12px;
-    padding: 5px 0;
+.denomination_left img{
+    position: relative;
+    display:block;
+    float: left;
+    background-color: #114165;
+    margin: 2px 3px 0px 2px;
+    padding: 3px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border: 0px solid rgba(0,0,0,0);
+}
+
+.denomination_right h4{
+    font-family: "Lucida Sans Unicode";
+    font-size: 14px;
+    padding: 3px 0 3px 0;
     color: #124165;
+    font-weight: 100;
     text-transform:uppercase;
+}
+.denomination_left h4{
+    font-family: "Lucida Sans Unicode";
+    font-size: 13px;
+    color: #124165;
+    font-weight: 100;
+    text-transform:uppercase;
+    line-height: 26px;
 }
 .denomination_class{
     position: relative;
     width: 150px;
-    height: 25px;
+    height: 26px;
     border: 1px solid #949FA4;
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -448,26 +495,27 @@ aside.left_bar{
     position: relative;
     display:block;
     float: left;
-    margin: 0px 4px;
+    margin: 0px 2px 0 4px;
 }
 .denomination_class h4{
-    font-family: sans-serif;
-    font-size: 13px;
-    padding: 5px 0;
+    font-family: "Lucida Sans Unicode";
+    font-size: 14px;
     color: #124165;
     text-transform:uppercase;
     font-weight: 300;
+    line-height: 27px;
 }
 ul.menu_bar_right{
     float: none;
     color: rgba(0,0,0,0);
     padding-left: 25px;
-    margin-bottom: 14px;
+    margin-bottom: 9px;
+    padding-top: 4px;
 }
 ul.menu_bar_left{
     float: none;
     list-style: circle outside;
-    padding-left: 45px;
+    padding-left: 47px;
     color:#79878D;
 }
 li.li_bar{
@@ -479,7 +527,7 @@ li.li_bar_right{
 }
 input.input_bar{
     margin-right: 10px;
-    font-family: sans-serif;
+    font-family: "Lucida Sans Unicode";
     font-size: 13px;
     font-weight: bold;
 }
@@ -494,16 +542,15 @@ a.a_bar{
 }
 a.a_bar_left{
     color:#465961;
-    font-weight: bold;
+    font-weight: 100;
     font-size: 13px;
     transition: all .25s;
     -webkit-transition: all .25s;
     -o-transition: all .25s;
-    letter-spacing: 1px;
 }
 a.a_bar_left:hover{
     color:#0C3256;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: bold;
     font-size: 14px;
     border-bottom: 1px solid #0C3256;
@@ -513,8 +560,8 @@ button.button_bar{
     text-align: center;
     text-transform: uppercase;
     color:#fff;
-    margin-top: 5px;
-    margin-left: 20px;
+    margin-top: 7px;
+    margin-left: 25px;
     padding: 5px 10px;
     font-size: 12px;
     cursor: pointer;
@@ -546,50 +593,51 @@ background: linear-gradient(to bottom,  rgba(228,231,232,1) 0%,rgba(147,167,176,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e7e8', endColorstr='#93a7b0',GradientType=0 );
     overflow: hidden;
     width: 530px;
-    float: left;
-    margin: 0 10px;
+    float: left;   
+    margin: 10px 5px 0 6px;
+    padding-bottom: 5px;
 }
 .col_content_left{
     width: 30.3%;
     position: relative;
     display: block;
     float: left;
-    margin: 5px 10px;
+    margin: 5px 14px 0 15px;
 }
 .col_content_center{
     width: 30.3%;
     position: relative;
     display: block;
     float: left;
-    overflow: hidden;
-    margin: 5px 0px;
+    margin: 5px 0px 0 -6px;
 }
 .col_content_right{
     width: 30.3%;
     position: relative;
     display: block;
     float: left;
-    margin: 5px 10px;
+    margin:10px 0px 0 6px;
 }
 figure{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 figure h5{
-    font-family: sans-serif;
-    font-size: 16px;
+    font-family: "Lucida Sans";
+    font-size: 14px;
     font-weight: bold;
     color:#276D8B;
 }
 h5.cach{
-    font-family: sans-serif;
+    font-family: Arial;
     font-size: 18px;
     font-weight: bold;
     font-style: oblique;
     color:#114165;
+    line-height: 10px;
 }
 h5.cach span{
-    font-family: sans-serif;
+    font-family: "Lucida Sans";
     font-size: 12px;
     font-weight: bold;
     font-style: oblique;
@@ -598,16 +646,15 @@ h5.cach span{
 figure img{
     position: relative;
     background-color: #fff;
-    padding: 6px 28px;
-    border: 0px solid rgba(0,0,0,0);
+    padding: 5px 28px 7px 28px;
+    border: 1px solid #c9c9c9;
     border-radius: 10px;
 }
 figcaption{
-    font-family:sans-serif;
+    font-family:"Lucida Sans";
     color: #000;
     font-size: 12px;
     font-weight: bold;
-    margin-bottom: 2px;
 }
 
 aside.right_bar{
@@ -637,25 +684,25 @@ footer{
 nav.footer_menu{
     position: relative;
     display: block;
-    margin: 0px auto;
+    margin: -3px auto 0;
     width: 310px;
     padding: 7px 0;
 }
 nav.footer_menu li{
     display: inline-block;
-    line-height: 12px;
+    line-height: 10px;
 }
 li.li_footer{
     display: inline-block;
-    line-height: 12px;
-    padding: 0px 12px;
+    line-height: 10px;
+    padding: 0px 10px 0 9px;
     border-right: 2px solid #788892;
 }
 li.li_contacts{
-    padding-left: 12px;
+    padding-left: 10px;
 }
 nav.footer_menu a{
-    font-family: sans-serif;
+    font-family: "Lucida Sans Unicode";
     font-size: 12px;
    color:#ACB5BA;
    text-align: center;
@@ -671,8 +718,8 @@ input::-webkit-input-placeholder {
 footer p{
     color: #7A4640;
     text-align: center;
-    font-family: sans-serif;
-    font-size: 11px;
+    font-family: "Lucida Sans Unicode";
+    font-size: 10px;
     width: 100%;
     clear: both;
     position: relative;
@@ -727,7 +774,7 @@ input:focus:-ms-input-placeholder {
   padding-left: 5px; 
 }                                    /* контактная форма с паттерном*/
 .label_color{
-    font-family:"HelveticaNeueCyr-Light";
+    font-family:"Lucida Sans";
     font-size: 15px;
     color: #fff;
 }
