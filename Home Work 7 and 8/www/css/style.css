@@ -14,26 +14,31 @@ body {
     margin:0;
     padding: 0;  /*обнуление полей*/
 }
+header{
+	position:relative;
+	display:block;
+	height:800px;
+}
 
 .conteiner {
-    margin: 75px auto 0; 
+    margin: 75px auto 0px; 
     display: block;    /*располагаем контент по средине экрана*/
     position: relative;
     width: 100%;
-    height: 1000px;
+    height: 100%;
+    overflow: hidden;
     background-color: rgba(0,0,0,0);
 }
 .header{
     position: relative;
     display: block;
-    width: 960px;
     margin: 0 auto;
 }
                                /*Header*/
 .logo{
     position: relative;
     display: block;
-    width: 25%;
+    width: 18%;
 }
 h4.logo__name{
     font-family: "leaguegothic-regular-webfont";
@@ -50,8 +55,9 @@ h4.logo__name{
 .header__home{
     position: relative;
     display: block;
-    float: right;
+	float: right;
     top: -50px;
+	padding-right:5px;
 }
 .menu{
     position: relative;
@@ -62,17 +68,9 @@ h4.logo__name{
     position: relative;
     display: inline-block;
     float: left;
-    line-height: 40px;
-    padding: 0 25px;
+    line-height: 39px;
+    padding: 0 3%;
 } 
-.menu__li_padding{
-    padding-right: 0px;
-    padding-left: 25px;
-    position: relative;
-    display: inline-block;
-    float: left;
-    line-height: 40px;    
-}
 .menu__a{
     font-family: "leaguegothic-regular-webfont";
     font-size: 24px;
@@ -83,6 +81,8 @@ h4.logo__name{
     display: block;
     color: #fff;
     outline: none;
+	text-align:center;
+    letter-spacing: 1px;
 }
                             /*дикорирование ссылки при наведении*/
 .menu__a::after{
@@ -133,6 +133,7 @@ h4.logo__name{
     position: relative;
     display: block;
     margin: 0 auto;
+    padding-left: 20px;
 }
 h4.slider__name{
     font-family: "leaguegothic-regular-webfont";
@@ -157,13 +158,13 @@ h6.slider__description{
     
 }
 p.slider__item{
-     font-family: "opensans-light-webfont";
+    font-family: "opensans-light-webfont";
     font-size: 19px;
     text-transform: none;
     float: left;
     color: #FFF;
     font-weight: 100;
-    width: 520px;
+    width: 56%;
     position: relative;
     display: block;
     clear: left;
@@ -179,10 +180,10 @@ p.slider__item_768{
     top: -20px;
 }
 .conteinerimg__iphone4bake{
-    position: absolute;
+    position: relative;
     display: block;
     left: -70px;
-    top: 75px;
+    top: -300px;
     background:url(img/iphone4bake.png) no-repeat;
     width: 123px;
     height: 236px;
@@ -202,7 +203,95 @@ p.slider__item_768{
     top: 160px;
     left: 55px;
     z-index: 110;
+}                                       /*Header*/
+.content{
+	position:relative;
+	clear:both;
+	display:block;
+	width:100%;
+	height:100%;
+	margin:0 auto;
+}
+section.about{
+	position:relative;
+	display:block;
+    border-top: 1px solid #33253A;
+    border-bottom: 1px solid #1D2F37;
+	background: rgb(116,80,130);
+	background: -moz-linear-gradient(top,  rgb(116,80,130) 0%, rgb(51,38,58) 100%);
+	background: -webkit-linear-gradient(top,  rgb(116,80,130) 0%,rgb(51,38,58) 100%);
+	background: linear-gradient(to bottom,  rgb(116,80,130) 0%,rgb(51,38,58) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745082', endColorstr='#33263a',GradientType=0 );
+	width:100%;
+	padding-top: 80px;
+    padding-bottom: 70px;
+	margin: 0 auto;
+    height: 200px;
+}
+.about__size{
+	position:relative;
+	display:block;
+	width:960px;
+    margin: 0 auto;
+}
+.about__colum{
+    width: 32%;
+    position: relative;
+    float: left;
+    display: block;
+}
+h4.about__title{
+    font-family: "leaguegothic-regular-webfont";
+    font-size: 27px;
+    font-weight: 100;
+    text-shadow: 0px 1px 3px rgb(25,23,24);
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+    padding-bottom: 10px; 
+}
+.fa-comment, .fa-music, .fa-wrench{
+    transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    position: relative;
+    top: 7px;
+    padding-left: 25px;
+}
+.fa-music{
+    transform: none;
+    padding-right: 25px;
+}
+p.about__text{
+    width: 72%;
+    font-family: "opensans-light-webfont";
+    font-size: 16px;
+    text-transform: none;
+    text-shadow: 0px 1px 3px rgb(25,23,24);
+    position: relative;
+    padding-left: 31%;
+    line-height: 24px;
+}
+button.about__button{
+    font-family: "leaguegothic-regular-webfont";
+    font-size: 18px;
+    font-weight: 100;
+    position: relative;
+    display: block;
+    float: right;
+    color: #fff;
+    background-color: rgba(0,0,0,0);
+    border:none;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 3px rgb(25,23,24);
+    padding-top: 25px;
+}
+button.about__button:hover{
+    text-shadow: 0px 0px 12px #fff;
+    cursor: pointer;
 }
 
 
-                                 /*Header*/
+                                 
