@@ -1,4 +1,4 @@
-body {
+body, .footer__menu {
     margin: 0 auto; /*наружный отступ*/
     background-color: #000;
     font-family: sans-serif;
@@ -40,19 +40,23 @@ header{
     display: block;
     width: 18%;
 }
-h4.logo__name{
+h4.logo__name, h4.footer__name{
     font-family: "leaguegothic-regular-webfont";
     font-size: 50px;
     text-transform: uppercase;
     text-shadow: 0px 1px 3px rgb(25,23,24);
+    -webkit-text-shadow: 0px 1px 3px rgb(25,23,24);
+    -moz-text-shadow: 0px 1px 3px rgb(25,23,24);
+    -o-text-shadow: 0px 1px 3px rgb(25,23,24);
+    -ms-text-shadow: 0px 1px 3px rgb(25,23,24);
 }
-.logo__er{
+.logo__er, .footer__er{
     color:#714E80;
     text-shadow:none;
     top: 1px;
     position: relative;
 }
-.header__home{
+.header__home, .footer__home{
     position: relative;
     display: block;
 	float: right;
@@ -63,6 +67,7 @@ h4.logo__name{
     position: relative;
     display: block;
     height: 50px;
+    width: 660px;
 }
 .menu__li{
     position: relative;
@@ -77,6 +82,10 @@ h4.logo__name{
     text-transform: uppercase;
     text-decoration: none;
     text-shadow: 0px 1px 3px rgb(25,23,24);
+    -webkit-text-shadow: 0px 1px 3px rgb(25,23,24);
+    -moz-text-shadow: 0px 1px 3px rgb(25,23,24);
+    -o-text-shadow: 0px 1px 3px rgb(25,23,24);
+    -ms-text-shadow: 0px 1px 3px rgb(25,23,24);
     position: relative;
     display: block;
     color: #fff;
@@ -93,6 +102,10 @@ h4.logo__name{
    width: 0;
    background-color: #EDBFFF;
    transition: width .5s ease-in-out;
+   -webkit-transition: width .5s ease-in-out;
+   -ms-transition: width .5s ease-in-out;
+   -o-transition: width .5s ease-in-out;
+   -moz-transition: width .5s ease-in-out;
    left: 50%;
    bottom: 0;
 }
@@ -104,6 +117,10 @@ h4.logo__name{
    width: 0;
    background-color: #EDBFFF;
    transition: width .5s ease-in-out, left .5s ease-in-out;
+   -webkit-transition: width .5s ease-in-out, left .5s ease-in-out;
+   -o-transition: width .5s ease-in-out, left .5s ease-in-out;
+   -ms-transition: width .5s ease-in-out, left .5s ease-in-out;
+   -moz-transition: width .5s ease-in-out, left .5s ease-in-out;
    left: 50%;
    bottom: 0;
 }
@@ -140,6 +157,10 @@ h4.slider__name{
     font-size: 57px;
     text-transform: none;
     text-shadow: 0px 1px 3px rgb(25,23,24);
+    -webkit-text-shadow: 0px 1px 3px rgb(25,23,24);
+    -moz-text-shadow: 0px 1px 3px rgb(25,23,24);
+    -o-text-shadow: 0px 1px 3px rgb(25,23,24);
+    -ms-text-shadow: 0px 1px 3px rgb(25,23,24);
     float: left;
     letter-spacing: 1px;
     font-weight: 100;
@@ -226,21 +247,23 @@ section.about{
 	padding-top: 80px;
     padding-bottom: 70px;
 	margin: 0 auto;
-    height: 200px;
+    height: 100%;
 }
 .about__size{
 	position:relative;
 	display:block;
 	width:960px;
     margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
 }
-.about__colum{
+.about__colum, .footer__colum{
     width: 32%;
     position: relative;
     float: left;
     display: block;
 }
-h4.about__title{
+h4.about__title, h4.blog__title, .blog__title_ph, h6.blog__title, h6.footer__name, h6.footer__name_768{
     font-family: "leaguegothic-regular-webfont";
     font-size: 27px;
     font-weight: 100;
@@ -264,17 +287,21 @@ h4.about__title{
     transform: none;
     padding-right: 25px;
 }
-p.about__text{
+p.about__text, .blog__text, p.blog__text_768, .footer__text, .name__site_pas{
     width: 72%;
     font-family: "opensans-light-webfont";
     font-size: 16px;
     text-transform: none;
     text-shadow: 0px 1px 3px rgb(25,23,24);
+    -webkit-text-shadow: 0px 1px 3px rgb(25,23,24);
+    -moz-text-shadow: 0px 1px 3px rgb(25,23,24);
+    -o-text-shadow: 0px 1px 3px rgb(25,23,24);
+    -ms-text-shadow: 0px 1px 3px rgb(25,23,24);
     position: relative;
     padding-left: 31%;
     line-height: 24px;
 }
-button.about__button{
+button.about__button, button.blog__button{
     font-family: "leaguegothic-regular-webfont";
     font-size: 18px;
     font-weight: 100;
@@ -286,11 +313,186 @@ button.about__button{
     border:none;
     text-transform: uppercase;
     text-shadow: 0px 1px 3px rgb(25,23,24);
+    -webkit-text-shadow: 0px 1px 3px rgb(25,23,24);
+    -moz-text-shadow: 0px 1px 3px rgb(25,23,24);
+    -o-text-shadow: 0px 1px 3px rgb(25,23,24);
+    -ms-text-shadow: 0px 1px 3px rgb(25,23,24);
     padding-top: 25px;
 }
 button.about__button:hover{
     text-shadow: 0px 0px 12px #fff;
     cursor: pointer;
+}
+section.blog, .footer{
+	position: relative;
+    display: block;
+    border-top: 1px solid #33253A;
+    border-bottom:none;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+	padding-top: 80px;
+    padding-bottom: 70px;
+    margin: 0 auto;
+}
+.blog__size, .footer__size{
+	position: relative;
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+	clear:both;
+    height: 100%;
+    overflow: hidden;
+    padding-left: 2%;
+}
+.blog__colum{
+	width: 40%;
+    position: relative;
+    float: left;
+    display: block;
+	padding-left:10%;
+}
+h4.blog__title, .blog__title_ph, h6.blog__title, h6.footer__name, h6.footer__name_768{
+    text-shadow: none;
+    text-align: left;
+    color: #454545;
+	text-transform:uppercase;
+}
+.blog__title_ph{
+	color:#EDBFFF;
+}
+.blog__img{
+	position:relative;
+	display:block;
+	right: 65px;
+    top: 40px;
+}
+p.blog__text, p.blog__text_768{
+	width:92%;
+	color:#454545;
+	text-shadow:none;
+	font-weight:100;
+	padding-left:0;
+}
+p.blog__text_comment, p.blog__text_comment_768{
+    width: 100%;
+}
+p.blog__text_comment_768{
+    display: none;
+}
+.blog__text_768{
+    display: none;
+}
+h4.blog__title_ru{
+    margin: 46px 0 0 -63px;
+}
+.blog__comment{
+	position:relative;
+	display:block;
+    margin: -43px 0;
+}
+h6.blog__title{
+	font-size:22px;
+	font-weight:bold;
+	text-transform:none;
+	padding-bottom:0;
+}
+img.blog__img_com{
+	top:55px;
+}
+button.blog__button{
+	color: #454545;
+	text-shadow: none;
+    cursor: pointer;
+}
+.blog__banner{
+    position: relative;
+    display: block;
+    background: url(img/banner.png) no-repeat;
+    margin: 450px auto 28px;
+    width: 775px;
+    height: 70px;
+}
+footer{
+    position: relative;
+    display: block;
+    clear: both;
+    margin: 0 auto;
+    border: none;
+}
+.footer__colum{
+    width: 33%;
+}
+.footer{
+    border-top: 2px solid #D8D8D8;
+    border-bottom:none;
+}
+h4.footer__name, h6.footer__name, h6.footer__name_768{
+    color:#454545;
+    text-shadow:none;
+    font-weight: 100;
+}
+.footer__er{
+    color:#B9B9B9;
+}
+.footer__copyright, .name__site{
+    font-family: Georgia;
+    font-size: 17px;
+    font-weight: 100;
+    color:#C5C5C5;
+    font-style: oblique;
+    padding: 10px 0;
+}
+.footer__text{
+    color:#454545;
+    text-shadow: none;
+    padding-left:0;
+    width: 84%;
+}
+h6.footer__name_768{
+    display: none;
+}
+.footer__menu{
+    background:url(img/footer-bg.jpg);
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    height: 114px;
+    box-shadow: inset 0px 6px 20px 0px rgb(57, 57, 57);
+    -webkit-box-shadow: inset 0px 6px 20px 0px rgb(57, 57, 57);
+    -moz-box-shadow: inset 0px 6px 20px 0px rgb(57, 57, 57);
+    -ms-box-shadow: inset 0px 6px 20px 0px rgb(57, 57, 57);
+    -o-box-shadow: inset 0px 6px 20px 0px rgb(57, 57, 57);
+}
+.footer__home{
+    top: 50px;
+    float: left;
+}
+.menu__a_footer{
+    font-size: 21px;
+    }
+.name{
+    position: relative;
+    display: block;
+    float: right;
+    top: 50px;
+    width: 140px;
+    padding-right: 4%;
+}
+.name__site{
+    font-size: 12px;
+    font-style:normal;
+    text-shadow: 0px 1px 3px rgb(25,23,24);
+    -webkit-text-shadow: 0px 1px 3px rgb(25,23,24);
+    -moz-text-shadow: 0px 1px 3px rgb(25,23,24);
+    -o-text-shadow: 0px 1px 3px rgb(25,23,24);
+    -ms-text-shadow: 0px 1px 3px rgb(25,23,24);
+}
+.name__site_pas{
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 4%;
+    color: #fff;
+
 }
 
 

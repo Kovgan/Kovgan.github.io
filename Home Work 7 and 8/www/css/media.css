@@ -18,10 +18,6 @@
 .menu{
 	width:100%;
 }
-.menu__li{
-	width:16%;
-	padding:0;
-}
 .menu__li_border{
 	border-top: none;
 	padding-left: 20px;
@@ -63,13 +59,54 @@ p.slider__item_768{
     line-height: 30px;
 	}
 section.about{
-	 height: 220px;
+	 height: 100%;
 }
 .about__size{
 	width: 100%;
 	}
 h4.about__title{
 	font-size: 3vw;
+	}
+p.blog__text{
+	display: none;
+	}
+p.blog__text_768{
+	width: 84%;
+	display: block;
+	}
+.blog__title_ph{
+	position: relative;
+	display: block;
+	clear: both;
+	padding: 0;
+	}
+p.blog__text_comment{
+	display: none;
+	}
+p.blog__text_comment_768{
+	position: relative;
+	display: block;
+	}
+button.blog__button{
+	padding-right: 15%;
+	}
+.footer__size{
+	padding-left: 2%;
+}
+.footer__name, h6.footer__copyright{
+	display: none;
+	}
+.footer__name_768{
+	display: block !important;	
+	}
+.name{
+	top: 80px;
+	}
+.menu__footer{
+	width: 490px;
+	}
+.menu__li_footer{
+	padding:0 2%;
 	}
 }
 
@@ -114,6 +151,7 @@ header{
 .menu{
 	width:100%;
 }
+
 .menu__li{
 	float: none;
 	margin: 0 auto;
@@ -121,7 +159,7 @@ header{
 	padding: 0px;
 	border-bottom: 1px solid #36283E;
 	border-top: 1px solid #503D58;
-	width: 101%;
+	display: block;
 	}
 .menu__a:hover{
 	background: url(img/apattern.png) repeat;
@@ -175,15 +213,15 @@ p.slider__item, p.slider__item_768{
     display: none;
 	}
 section.about{
-	 height: 500px;
+	 height: 100%;
 }
 .about__size{
 	width: 768px;
 	}
-.about__colum{
+.about__colum, .footer__colum{
 	width: 100%;
 	padding-right: 10px;
-	padding-left: 0;
+	padding-left: 2%;
 	padding-bottom: 20px;
 	}
 .fa-comment, .fa-music, .fa-wrench{
@@ -202,6 +240,61 @@ p.about__text{
 	}
 button.about__button{
 	padding-right: 30px;
+	}
+.blog__colum{
+	width: 100%;
+	float: none;
+	padding-left: 15%;
+	}
+.blog__colum_768{
+	padding-left: 28%;
+}
+.blog__title_ph{
+	display: inline;
+	}
+p.blog__text{
+	display: block;
+	width: 73%;
+}
+p.blog__text_768, p.blog__text_comment{
+	display: none;
+	}
+button.blog__button {
+    padding-right: 46%;
+	}
+.blog__banner{
+	display: none;
+}
+.blog__banner_768{
+	position: relative;
+    display: block;
+    background: url(img/banner-2.png) no-repeat;
+	margin: 205px auto 28px;
+    width: 342px;
+    height: 160px;
+	}
+.footer__menu{
+    background:url(img/footer-bg-768.jpg);
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+.footer__home{
+	float: none;
+	clear: both;
+	width: 100%;
+	}
+.menu__li_footer{
+	border: none;
+	display: inline-block !important;
+	padding: 0 1%;
+	}
+.menu__a_footer:hover{
+	background:none;
+}
+.name{
+	margin: 0 auto;
+	float: none;
 	}
 }
 
@@ -247,10 +340,34 @@ h6.slider__description{
 	display: none;
 	}
 section.about{
-	 height: 800px;
+	 height: 100%;
 }
 p.about__text{
 	width: 60%;
+	}
+.blog__colum{
+	padding-left: 20%;
+}
+.blog__title_ph{
+	display: block;
+	clear: both;
+	}
+.blog__banner_768{
+	display: none;
+}
+.blog__banner_480{
+	position: relative;
+    display: block;
+    background: url(img/banner-3.png) no-repeat;
+	margin: 205px auto 0;
+    width: 247px;
+    height: 307px;
+	}
+.footer{
+	display: none;
+	}
+.footer__home{
+	display: none;
 	}
 }
 
@@ -275,51 +392,27 @@ button.about__button
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-.header{
-	width: 320px;
-	}
-.slider__position{
-	width: 320px;
-}
-.about__size{
+.header, .about__size, .slider__position, .blog__size, .footer__size{
 	width: 320px;
 	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-.header{
-	width: 480px;
-	}
-.slider__position{
-	width: 480px;
-}
-.about__size{
+.header, .about__size, .slider__position, .blog__size, .footer__size{
 	width: 480px;
 	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-.header{
-	width: 768px;
-	}
-.slider__position{
-	width: 768px;
-}
-.about__size{
+.header, .about__size, .slider__position, .blog__size, .footer__size{
 	width: 768px;
 	}
 }
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 960px) {
-.header{
+.header, .about__size, .slider__position, .blog__size, .footer__size{
 	width: 960px;
 	}	
-.slider__position{
-	width: 960px;
-}
-.about__size{
-	width: 960px;
-	}
 }
