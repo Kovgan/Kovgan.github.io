@@ -63,6 +63,9 @@ h4.logo__name, h4.footer__name{
     top: -50px;
 	padding-right:5px;
 }
+.header__home_480{
+    display: none;
+}
 .menu{
     position: relative;
     display: block;
